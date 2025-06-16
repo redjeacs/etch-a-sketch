@@ -1,0 +1,16 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+}
+
+.grid-item {
+  width:  calc(100%/16);
+  height: calc(100%/16);
+  flex: auto;
+}
+
+.gride-item:hover {
+  background-color: pink;
+}
