@@ -27,7 +27,9 @@ function deleteGrid() {
 }
 
 gridSizeBtn.addEventListener('click', () => {
-  const gridSize = prompt('select the number of squares per side', '')
-  deleteGrid();
-  createGrid(gridSize)
+  const gridSize = prompt('select the number of squares per side (max: 100)', '')
+  if(gridSize > 0 && gridSize <= 100) {
+    deleteGrid();
+    createGrid(gridSize)
+  }
 })
