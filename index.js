@@ -1,4 +1,5 @@
 const container = document.querySelector('#container');
+const gridSize = document.createElement('button');
 
 createGrid();
 function createGrid() {
@@ -7,11 +8,8 @@ function createGrid() {
     grid.classList.add('grid-item');
     grid.textContent = 'grid';
     container.appendChild(grid);
+    grid.addEventListener('mouseenter', () => {
+      grid.style.backgroundColor = 'pink';
+    })
   }
 }
-
-let grid = document.querySelector('grid-item');
-
-grid.addEventListener('mouseenter', () => {
-  grid.style.backgroundColor = 'pink';
-})

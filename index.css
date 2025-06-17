@@ -10,7 +10,3 @@
   height: calc(100%/16);
   flex: auto;
 }
-
-.gride-item:hover {
-  background-color: pink;
-}
